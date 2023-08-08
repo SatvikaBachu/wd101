@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<title>Form Validation</title>
+  </head>
+<style>
+.container {
+ height:70%;
+width:40%;
+margin:0 auto;
+padding:20px;
+border :1 px solid black;
+line-height: 1.5;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input:focus {
+  border: 2px solid #f2796e;
+}
+button {
+  background-color: Green;
+  padding: 15px 32px;
+}
+table {
+  width: 100%;
+  border: 1px solid;
+}
+th,td{
+border: 1px solid;
+text-align:center
+}
+</style>
+</head>
+  <body>
+<center>
+ <form id="form">
+ <div class="container">
+ <center> <h1>Registration form</h1></center>
+
+        <div>
+          <label for="username">User Name</label>
+          <input
+            required type="text"
+            name="username"
+            id="name"/><br><br>
+          <label for="email">Email</label>
+          <input
+            required type="email"
+            name="email"
+            id="email"
+            placeholder="abc@gmail.com"
+          />
+<br><br>
+          <label for="password">Password</label>
+          <input
+          required  type="password"
+            name="password"
+            id="password"
+            placeholder="Password here"
+          /><br><br>
+<label for="dob">Date of Birth</label>
+   <input required type="date" id="dob" name="dob" min="1968-08-08" max="2005-08-08"/><br><br>
+     <input required type="checkbox" id="acceptTerms" name="acceptTerms"><br><br>
+   <label for="acceptTerms">Accept Terms & Conditions</label><br><br>
+        <button type="submit" id="submit">Submit</button>
+
+      </form>
+</div>
+
+<div>
+<center>
+<h2>Entries</h2></center>
+<div id="user-details">
+</div>
+</div>
+
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
